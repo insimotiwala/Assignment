@@ -6,12 +6,11 @@ using UnityEngine.AI;
 public class MobileElements : MonoBehaviour
 {
     public GameObject Target;
-    private NavMeshAgent body;
+    public NavMeshAgent body;
 
     // Start is called before the first frame update
     private void Start()
     {
-        body = this.GetComponent<NavMeshAgent>();
         body.SetDestination(Target.transform.position);
     }
 
